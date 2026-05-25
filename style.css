@@ -61,7 +61,7 @@ h1 {
 
   margin: 0 auto;
 
-  margin-top: -18px;
+  margin-top: -10px;
 }
 
 
@@ -79,13 +79,13 @@ nav {
 
   position: absolute;
 
-  top: 49%;
+  top: 43%;
 
   left: 50%;
 
   transform: translate(-50%, -50%);
 
-  width: 82%;
+  width: 58%;
 
   display: flex;
 
@@ -93,7 +93,7 @@ nav {
 
   align-items: center;
 
-  gap: 26px;
+  gap: 22px;
 }
 
 
@@ -106,23 +106,14 @@ nav a {
 
   text-transform: uppercase;
 
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 
-  font-size: 13px;
+  font-size: 11px;
 
   font-weight: 600;
 
-  transition: 0.25s;
+  white-space: nowrap;
 }
-
-
-
-nav a:hover {
-
-  color: #b07888;
-}
-
-
 
 /* MAIN BOX */
 
