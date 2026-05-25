@@ -2,15 +2,19 @@
 <html lang="en">
 
 <head>
-  
+
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Samantha Barron</title>
 
   <link rel="stylesheet" href="style.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
+
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Cormorant+Garamond:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 </head>
@@ -24,19 +28,56 @@
   </header>
 
 
- <div id="menu-wrapper">
 
-  <img id="menu-ribbon" src="photos/kindpng_194412.png" alt="Ribbon Menu">
+  <div id="menu-wrapper">
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="pictures.html">Pictures</a>
-    <a href="artwork.html">Artwork</a>
-    <a href="animations.html">Animations</a>
-    <a href="about.html">About</a>
-  </nav>
+    <img
+      id="menu-ribbon"
+      src="photos/kindpng_194412.png"
+      alt="Ribbon Menu"
+    >
 
-</div>
+
+
+    <svg id="menu-svg" viewBox="0 0 1000 300">
+
+      <path
+        id="menu-curve"
+        d="M 240 165 Q 500 125 760 165"
+        fill="transparent"
+      />
+
+
+
+      <text>
+
+        <textPath
+          href="#menu-curve"
+          startOffset="50%"
+          text-anchor="middle"
+        >
+
+          HOME
+          &nbsp;&nbsp;&nbsp;
+
+          PICTURES
+          &nbsp;&nbsp;&nbsp;
+
+          ARTWORK
+          &nbsp;&nbsp;&nbsp;
+
+          ANIMATIONS
+          &nbsp;&nbsp;&nbsp;
+
+          ABOUT
+
+        </textPath>
+
+      </text>
+
+    </svg>
+
+  </div>
 
 
 
