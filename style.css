@@ -52,42 +52,85 @@ h1 {
 /* RIBBON MENU */
 
 #menu-wrapper {
-  width: 950px;
-  max-width: 95%;
-  margin: -10px auto 0 auto;
 
-  display: grid;
-  place-items: center;
+  position: relative;
+
+  width: 950px;
+
+  max-width: 95%;
+
+  margin: -10px auto 0 auto;
 }
 
+
+
 #menu-ribbon {
-  grid-area: 1 / 1;
+
   width: 100%;
+
   display: block;
 }
 
-nav {
-  grid-area: 1 / 1;
 
-  width: 58%;
+
+#menu-wrapper nav {
+
+  position: absolute;
+
+  top: 45%;
+
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 56%;
+
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 18px;
 
-  margin-top: -18px;
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 16px;
+
+  margin: 0;
+
+  padding: 0;
+
+  background: none;
+
   z-index: 2;
 }
 
-nav a {
+
+
+#menu-wrapper nav a {
+
   color: #6e4b53;
+
   text-decoration: none;
+
   text-transform: uppercase;
+
   letter-spacing: 1px;
+
   font-size: 11px;
+
   font-weight: 600;
+
   white-space: nowrap;
+
+  transition: 0.25s;
 }
+
+
+
+#menu-wrapper nav a:hover {
+
+  color: #b07888;
+}
+
+
 
 /* MAIN BOX */
 
@@ -182,41 +225,18 @@ footer {
     margin-top: -8px;
   }
 
-  #menu-ribbon {
+  #menu-wrapper nav {
 
-    display: none;
+    width: 70%;
+
+    gap: 8px;
   }
 
-  nav {
+  #menu-wrapper nav a {
 
-    position: static;
+    font-size: 8px;
 
-    transform: none;
-
-    width: 100%;
-
-    display: block;
-
-    text-align: center;
-
-    background-color: rgba(111, 143, 163, 0.92);
-
-    padding-top: 14px;
-
-    padding-bottom: 14px;
-
-    border-radius: 20px;
-  }
-
-  nav a {
-
-    display: block;
-
-    margin-top: 10px;
-
-    margin-bottom: 10px;
-
-    font-size: 13px;
+    letter-spacing: 0.5px;
   }
 
   #homepage-box {
