@@ -49,7 +49,7 @@ h1 {
 
 
 
-/* RIBBON */
+/* RIBBON MENU */
 
 #menu-wrapper {
 
@@ -73,119 +73,98 @@ h1 {
 
 
 
-/* CURVED SVG TEXT */
+/* CLICKABLE CURVED MENU */
 
-#menu-svg {
+#menu {
 
   position: absolute;
 
-  top: -8%;
+  top: 12%;
 
-  left: 0;
+  left: 50%;
 
-  width: 100%;
+  transform: translateX(-50%);
 
-  height: 78%;
+  width: 62%;
 
-  z-index: 10;
+  display: flex;
 
-  pointer-events: none;
+  justify-content: center;
+
+  gap: 20px;
+
+  margin: 0;
+
+  padding: 0;
+
+  background: none;
 }
 
 
 
-#menu-svg text {
+#menu a {
 
-  fill: #5a3439;
+  position: relative;
 
-  font-size: 20px;
+  color: #5a3439;
 
-  letter-spacing: 2px;
+  text-decoration: none;
 
   text-transform: uppercase;
 
-  font-family: 'Cormorant Garamond', serif;
+  letter-spacing: 1.5px;
+
+  font-size: 13px;
 
   font-weight: 600;
+
+  white-space: nowrap;
+
+  transition: 0.25s;
 }
 
 
 
-/* INVISIBLE CLICKABLE LINKS */
+#menu a:hover {
 
-#menu-links {
-
-  position: absolute;
-
-  top: 0;
-
-  left: 0;
-
-  width: 100%;
-
-  height: 100%;
-
-  z-index: 50;
+  color: #a56b7a;
 }
 
 
 
-#menu-links a {
+/* FAKE ARCH */
 
-  position: absolute;
+#menu a:nth-child(1) {
 
-  display: block;
-
-  width: 90px;
-
-  height: 28px;
+  top: 9px;
 }
 
 
 
-/* INDIVIDUAL BUTTON POSITIONS */
+#menu a:nth-child(2) {
 
-.link1 {
-
-  top: 8%;
-
-  left: 23%;
+  top: 3px;
 }
 
 
 
-.link2 {
+#menu a:nth-child(3) {
 
-  top: 5.5%;
-
-  left: 35%;
+  top: 0px;
 }
 
 
 
-.link3 {
+#menu a:nth-child(4) {
 
-  top: 4.5%;
-
-  left: 47%;
+  top: 3px;
 }
 
 
 
-.link4 {
+#menu a:nth-child(5) {
 
-  top: 5.5%;
-
-  left: 58%;
-}
-
-
-
-.link5 {
-
-  top: 8%;
-
-  left: 71%;
+  top: 9px;
 }
 
 
@@ -279,16 +258,20 @@ footer {
     width: 95%;
   }
 
-  #menu-svg {
+  #menu {
 
-    top: -5%;
+    width: 72%;
+
+    gap: 10px;
+
+    top: 10%;
   }
 
-  #menu-svg text {
+  #menu a {
 
-    font-size: 12px;
+    font-size: 8px;
 
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
   }
 
   #homepage-box {
