@@ -1,186 +1,148 @@
 body {
   margin: 0;
-  background-color: #bca9a8;
-  color: #f3ead8;
-  font-family: 'Cormorant Garamond', serif;
   min-height: 100vh;
-  background-image:
-    radial-gradient(circle at top left, rgba(255,255,255,0.10), transparent 35%),
-    radial-gradient(circle at bottom right, rgba(0,0,0,0.12), transparent 40%);
+  background-color: #f1b9ad;
+  color: #fff4df;
+  font-family: 'Cormorant Garamond', serif;
 }
 
-body::before,
-body::after {
-  content: "";
-  position: fixed;
-  top: 0;
-  width: 24px;
-  height: 100%;
-  background:
-    repeating-linear-gradient(
-      to bottom,
-      #5f7f95 0px,
-      #5f7f95 2px,
-      transparent 2px,
-      transparent 11px
-    );
-  opacity: 0.55;
-  z-index: -1;
-}
-
-body::before {
-  left: 14px;
-}
-
-body::after {
-  right: 14px;
-}
+/* HEADER */
 
 header {
   position: relative;
   text-align: center;
-  padding-top: 85px;
-  padding-bottom: 55px;
-  background-color: #8e7f86;
-  background-image:
-    linear-gradient(rgba(40,30,30,0.28), rgba(40,30,30,0.28));
-  border-bottom: 1px solid rgba(243,234,216,0.35);
+  padding: 80px 20px 45px;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(118, 151, 163, 0.95),
+      rgba(232, 170, 165, 0.95)
+    );
+  border-left: 26px solid #6f8fa3;
+  border-right: 26px solid #6f8fa3;
 }
 
 h1 {
   font-family: 'Great Vibes', cursive;
-  font-size: 92px;
+  font-size: 96px;
   font-weight: normal;
-  color: #f3ead8;
   margin: 0;
-  letter-spacing: 1px;
-  text-shadow: 0px 3px 14px rgba(0,0,0,0.45);
+  color: #fff4df;
+  text-shadow: 2px 4px 10px rgba(67, 52, 55, 0.35);
 }
+
+/* CORNER IMAGES */
 
 .corner-img {
   position: absolute;
-  top: 28px;
-  width: 145px;
-  height: 185px;
+  top: 35px;
+  width: 135px;
+  height: 175px;
   object-fit: cover;
-  background-color: #f3ead8;
-  padding: 7px;
-  box-shadow: 0px 8px 18px rgba(0,0,0,0.28);
+  border: 5px solid #fff4df;
+  box-shadow: 0 8px 18px rgba(70, 45, 45, 0.25);
 }
 
 .left {
-  left: 60px;
-  transform: rotate(-6deg);
+  left: 45px;
+  transform: rotate(-5deg);
 }
 
 .right {
-  right: 60px;
+  right: 45px;
   transform: rotate(5deg);
 }
 
+/* MENU */
+
 nav {
   text-align: center;
-  margin-top: 28px;
-  margin-bottom: 48px;
+  padding: 18px 10px;
+  background-color: #7f9fb0;
+  border-bottom: 4px solid #fff4df;
 }
 
 nav a {
-  color: #352822;
+  color: #fff4df;
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: 4px;
-  font-size: 13px;
-  margin-left: 18px;
-  margin-right: 18px;
-  opacity: 0.9;
-  transition: 0.25s;
+  letter-spacing: 3px;
+  font-size: 14px;
+  margin: 0 18px;
 }
 
 nav a:hover {
-  color: #7f3f3a;
+  color: #f6c6cb;
 }
+
+/* MAIN BOX */
 
 #homepage-box {
   width: 62%;
-  margin: auto;
-  padding: 42px;
-  background-color: rgba(243,234,216,0.18);
-  border: 1px solid rgba(243,234,216,0.45);
-  text-align: left;
-  box-shadow: 0px 10px 25px rgba(0,0,0,0.16);
+  margin: 55px auto;
+  padding: 38px;
+  background-color: rgba(255, 244, 223, 0.35);
+  border-left: 10px solid #7f9fb0;
+  border-right: 10px solid #7f9fb0;
+  color: #493431;
 }
 
 #homepage-box h2 {
-  font-size: 35px;
-  font-weight: normal;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  color: #352822;
   margin-top: 0;
-  margin-bottom: 20px;
+  font-size: 34px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #493431;
 }
 
 #homepage-box p {
-  font-size: 25px;
+  font-size: 24px;
   line-height: 1.65;
-  color: #352822;
-  margin-bottom: 0;
 }
+
+/* FOOTER */
 
 footer {
   text-align: center;
-  margin-top: 55px;
-  margin-bottom: 20px;
   font-family: 'Great Vibes', cursive;
-  font-size: 52px;
-  color: #7f3f3a;
+  font-size: 58px;
+  color: #fff4df;
+  margin: 45px 0 20px;
 }
 
 /* MOBILE */
 
 @media screen and (max-width: 900px) {
 
-  body::before,
-  body::after {
-    width: 12px;
-  }
-
   header {
     padding-top: 35px;
-    padding-bottom: 30px;
+    border-left: 14px solid #6f8fa3;
+    border-right: 14px solid #6f8fa3;
   }
 
   h1 {
     font-size: 62px;
-    line-height: 1.1;
-    padding-left: 12px;
-    padding-right: 12px;
   }
 
   .corner-img {
     position: static;
     display: block;
     margin: 15px auto;
-    width: 130px;
-    height: 165px;
-    transform: rotate(0deg);
-  }
-
-  nav {
-    margin-top: 25px;
-    margin-bottom: 35px;
+    width: 120px;
+    height: 155px;
+    transform: none;
   }
 
   nav a {
     display: block;
-    margin-top: 12px;
-    margin-bottom: 12px;
+    margin: 12px 0;
     font-size: 13px;
   }
 
   #homepage-box {
     width: 78%;
-    padding: 28px;
+    padding: 26px;
   }
 
   #homepage-box h2 {
@@ -190,9 +152,4 @@ footer {
   #homepage-box p {
     font-size: 21px;
   }
-
-  footer {
-    font-size: 42px;
-  }
-
 }
