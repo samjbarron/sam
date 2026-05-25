@@ -73,7 +73,7 @@ h1 {
 
 
 
-/* CURVED SVG MENU */
+/* CURVED SVG TEXT */
 
 #menu-svg {
 
@@ -88,11 +88,15 @@ h1 {
   height: 78%;
 
   z-index: 10;
+
+  pointer-events: none;
 }
 
 
 
 #menu-svg text {
+
+  fill: #5a3439;
 
   font-size: 20px;
 
@@ -107,27 +111,81 @@ h1 {
 
 
 
-#menu-svg a {
+/* INVISIBLE CLICKABLE LINKS */
 
-  fill: #5a3439;
+#menu-links {
 
-  text-decoration: none;
+  position: absolute;
 
-  transition: 0.25s;
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  z-index: 50;
 }
 
 
 
-#menu-svg a:hover {
+#menu-links a {
 
-  fill: #a56b7a;
+  position: absolute;
+
+  display: block;
+
+  width: 90px;
+
+  height: 28px;
 }
 
 
 
-#menu-svg tspan {
+/* INDIVIDUAL BUTTON POSITIONS */
 
-  fill: #5a3439;
+.link1 {
+
+  top: 8%;
+
+  left: 23%;
+}
+
+
+
+.link2 {
+
+  top: 5.5%;
+
+  left: 35%;
+}
+
+
+
+.link3 {
+
+  top: 4.5%;
+
+  left: 47%;
+}
+
+
+
+.link4 {
+
+  top: 5.5%;
+
+  left: 58%;
+}
+
+
+
+.link5 {
+
+  top: 8%;
+
+  left: 71%;
 }
 
 
