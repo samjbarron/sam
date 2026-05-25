@@ -62,9 +62,11 @@ h1 {
 
 nav {
 
-  width: 900px;
+  width: 1100px;
 
-  height: 130px;
+  max-width: 95%;
+
+  height: 140px;
 
   margin: 0 auto;
 
@@ -84,7 +86,7 @@ nav {
 
   align-items: center;
 
-  gap: 26px;
+  gap: 18px;
 }
 
 
@@ -97,11 +99,11 @@ nav a {
 
   text-transform: uppercase;
 
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 
-  font-size: 13px;
+  font-size: 11px;
 
-  margin-top: -8px;
+  white-space: nowrap;
 }
 
 
