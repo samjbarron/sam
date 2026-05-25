@@ -27,7 +27,7 @@ header {
 
   padding-top: 28px;
 
-  padding-bottom: 2px;
+  padding-bottom: 0px;
 }
 
 
@@ -73,61 +73,36 @@ h1 {
 
 
 
-#menu-wrapper nav {
+/* SVG CURVED TEXT */
+
+#menu-svg {
 
   position: absolute;
 
-  top: 12%;
+  top: 0;
 
-  left: 50%;
+  left: 0;
 
-  transform: translate(-50%, -50%);
+  width: 100%;
 
-  width: 52%;
-
-  display: flex;
-
-  justify-content: center;
-
-  align-items: center;
-
-  gap: 14px;
-
-  margin: 0;
-
-  padding: 0;
-
-  background: transparent;
-
-  z-index: 10;
+  height: 100%;
 }
 
 
 
-#menu-wrapper nav a {
+#menu-svg text {
 
-  color: #6e4b53;
+  fill: #5a3439;
 
-  text-decoration: none;
+  font-size: 20px;
+
+  letter-spacing: 2px;
 
   text-transform: uppercase;
 
-  letter-spacing: 1px;
-
-  font-size: 10px;
+  font-family: 'Cormorant Garamond', serif;
 
   font-weight: 600;
-
-  white-space: nowrap;
-
-  transition: 0.25s;
-}
-
-
-
-#menu-wrapper nav a:hover {
-
-  color: #b07888;
 }
 
 
@@ -221,20 +196,11 @@ footer {
     width: 95%;
   }
 
-  #menu-wrapper nav {
+  #menu-svg text {
 
-    top: 34%;
+    font-size: 12px;
 
-    width: 70%;
-
-    gap: 6px;
-  }
-
-  #menu-wrapper nav a {
-
-    font-size: 7px;
-
-    letter-spacing: 0px;
+    letter-spacing: 1px;
   }
 
   #homepage-box {
