@@ -68,10 +68,13 @@ h1 {
 }
 
 #menu-links a {
+  display: block;
   color: transparent;
   font-size: 0;
   width: 20%;
   height: 100%;
+  text-decoration: none;
+  overflow: hidden;
 }
 
 #homepage-box {
