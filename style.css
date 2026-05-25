@@ -34,7 +34,7 @@ h1 {
 #menu-ribbon {
   width: 100%;
   display: block;
-  filter: invert(0.85);
+ filter: invert(1) sepia(0.2);
 }
 
 #menu {
