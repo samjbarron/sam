@@ -62,39 +62,47 @@ h1 {
 
 nav {
 
-  width: fit-content;
+  width: 900px;
+
+  height: 130px;
 
   margin: 0 auto;
 
   margin-top: 10px;
 
-  padding: 16px 34px;
+  background-image: url("https://www.kindpng.com/picc/m/19-194412_clip-art-ribbon-banner-drawing-white-ribbon-banner-transparent-background-hd-png-download.png");
 
-  background-color: rgba(111, 143, 163, 0.92);
+  background-size: contain;
 
-  border-radius: 18px;
+  background-repeat: no-repeat;
 
-  box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+  background-position: center;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 26px;
 }
+
 
 
 nav a {
 
-  color: #fff4df;
+  color: #6a4b52;
 
   text-decoration: none;
 
   text-transform: uppercase;
 
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 
-  font-size: 14px;
+  font-size: 13px;
 
-  margin: 0 18px;
-
-  transition: 0.25s;
+  margin-top: -8px;
 }
-
 
 
 nav a:hover {
