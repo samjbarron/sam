@@ -1,250 +1,140 @@
 body {
-
   margin: 0;
-
-  background-color: #d8c4b6;
-
-  color: #f4ead7;
-
+  background-color: #bca9a8;
+  color: #f3ead8;
   font-family: 'Cormorant Garamond', serif;
-
   min-height: 100vh;
-
   background-image:
-  radial-gradient(circle at top left, rgba(255,255,255,0.08), transparent 30%),
-  radial-gradient(circle at bottom right, rgba(0,0,0,0.05), transparent 35%);
-
+    radial-gradient(circle at top left, rgba(255,255,255,0.10), transparent 35%),
+    radial-gradient(circle at bottom right, rgba(0,0,0,0.12), transparent 40%);
 }
-
-
-
-/* SIDE BORDERS */
 
 body::before,
 body::after {
-
   content: "";
-
   position: fixed;
-
   top: 0;
-
-  width: 22px;
-
+  width: 24px;
   height: 100%;
-
   background:
-  repeating-linear-gradient(
-  to bottom,
-  #5f7f95 0px,
-  #5f7f95 2px,
-  transparent 2px,
-  transparent 12px
-  );
-
-  opacity: 0.6;
-
+    repeating-linear-gradient(
+      to bottom,
+      #5f7f95 0px,
+      #5f7f95 2px,
+      transparent 2px,
+      transparent 11px
+    );
+  opacity: 0.55;
+  z-index: -1;
 }
 
 body::before {
-
-  left: 12px;
-
+  left: 14px;
 }
 
 body::after {
-
-  right: 12px;
-
+  right: 14px;
 }
 
-
-
-/* HEADER */
-
 header {
-
   position: relative;
-
   text-align: center;
-
-  padding-top: 55px;
-
-  padding-bottom: 25px;
-
+  padding-top: 85px;
+  padding-bottom: 55px;
+  background-color: #8e7f86;
+  background-image:
+    linear-gradient(rgba(40,30,30,0.28), rgba(40,30,30,0.28));
+  border-bottom: 1px solid rgba(243,234,216,0.35);
 }
 
 h1 {
-
   font-family: 'Great Vibes', cursive;
-
   font-size: 92px;
-
   font-weight: normal;
-
-  color: #f4ead7;
-
+  color: #f3ead8;
   margin: 0;
-
   letter-spacing: 1px;
-
-  text-shadow: 2px 2px 12px rgba(0,0,0,0.18);
-
+  text-shadow: 0px 3px 14px rgba(0,0,0,0.45);
 }
 
-
-
-/* COLLAGE IMAGES */
-
 .corner-img {
-
   position: absolute;
-
-  top: 25px;
-
-  width: 150px;
-
-  height: 190px;
-
+  top: 28px;
+  width: 145px;
+  height: 185px;
   object-fit: cover;
-
-  background-color: #f4ead7;
-
-  padding: 8px;
-
-  box-shadow: 0px 8px 18px rgba(0,0,0,0.25);
-
+  background-color: #f3ead8;
+  padding: 7px;
+  box-shadow: 0px 8px 18px rgba(0,0,0,0.28);
 }
 
 .left {
-
   left: 60px;
-
   transform: rotate(-6deg);
-
 }
 
 .right {
-
   right: 60px;
-
   transform: rotate(5deg);
-
 }
 
-
-
-/* NAVIGATION */
-
 nav {
-
   text-align: center;
-
-  margin-top: 10px;
-
-  margin-bottom: 45px;
-
+  margin-top: 28px;
+  margin-bottom: 48px;
 }
 
 nav a {
-
   color: #352822;
-
   text-decoration: none;
-
   text-transform: uppercase;
-
-  letter-spacing: 3px;
-
-  font-size: 16px;
-
-  margin-left: 20px;
-
-  margin-right: 20px;
-
+  letter-spacing: 4px;
+  font-size: 13px;
+  margin-left: 18px;
+  margin-right: 18px;
+  opacity: 0.9;
   transition: 0.25s;
-
 }
 
 nav a:hover {
-
   color: #7f3f3a;
-
 }
 
-
-
-/* MAIN CONTENT */
-
 #homepage-box {
-
-  width: 68%;
-
+  width: 62%;
   margin: auto;
-
-  padding: 45px;
-
-  background-color: rgba(95,127,149,0.15);
-
-  border: 1px solid rgba(244,234,215,0.45);
-
-  text-align: center;
-
-  box-shadow: 0px 10px 25px rgba(0,0,0,0.12);
-
-  backdrop-filter: blur(2px);
-
+  padding: 42px;
+  background-color: rgba(243,234,216,0.18);
+  border: 1px solid rgba(243,234,216,0.45);
+  text-align: left;
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.16);
 }
 
 #homepage-box h2 {
-
-  font-size: 42px;
-
+  font-size: 35px;
   font-weight: normal;
-
-  letter-spacing: 3px;
-
+  letter-spacing: 4px;
   text-transform: uppercase;
-
   color: #352822;
-
   margin-top: 0;
-
   margin-bottom: 20px;
-
 }
 
 #homepage-box p {
-
-  font-size: 26px;
-
-  line-height: 1.7;
-
+  font-size: 25px;
+  line-height: 1.65;
   color: #352822;
-
+  margin-bottom: 0;
 }
-
-
-
-/* FOOTER */
 
 footer {
-
   text-align: center;
-
   margin-top: 55px;
-
   margin-bottom: 20px;
-
   font-family: 'Great Vibes', cursive;
-
   font-size: 52px;
-
   color: #7f3f3a;
-
 }
-
-
 
 /* MOBILE */
 
@@ -252,75 +142,57 @@ footer {
 
   body::before,
   body::after {
-
     width: 12px;
+  }
 
+  header {
+    padding-top: 35px;
+    padding-bottom: 30px;
   }
 
   h1 {
-
     font-size: 62px;
-
     line-height: 1.1;
-
     padding-left: 12px;
-
     padding-right: 12px;
-
   }
 
   .corner-img {
-
     position: static;
-
     display: block;
-
     margin: 15px auto;
-
     width: 130px;
-
     height: 165px;
-
     transform: rotate(0deg);
+  }
 
+  nav {
+    margin-top: 25px;
+    margin-bottom: 35px;
   }
 
   nav a {
-
     display: block;
-
     margin-top: 12px;
-
     margin-bottom: 12px;
-
-    font-size: 15px;
-
+    font-size: 13px;
   }
 
   #homepage-box {
-
-    width: 80%;
-
+    width: 78%;
     padding: 28px;
-
   }
 
   #homepage-box h2 {
-
-    font-size: 30px;
-
+    font-size: 26px;
   }
 
   #homepage-box p {
-
-    font-size: 22px;
-
+    font-size: 21px;
   }
 
   footer {
-
     font-size: 42px;
-
   }
 
 }
