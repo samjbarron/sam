@@ -25,9 +25,9 @@ header {
 
   text-align: center;
 
-  padding-top: 35px;
+  padding-top: 28px;
 
-  padding-bottom: 12px;
+  padding-bottom: 2px;
 }
 
 
@@ -36,7 +36,7 @@ h1 {
 
   font-family: 'Mea Culpa', cursive;
 
-  font-size: 92px;
+  font-size: 96px;
 
   font-weight: normal;
 
@@ -44,16 +44,7 @@ h1 {
 
   color: #fff4df;
 
-  text-shadow: 2px 4px 12px rgba(58, 38, 42, 0.35);
-}
-
-
-
-/* REMOVE OLD IMAGES */
-
-.corner-img {
-
-  display: none;
+  text-shadow: 2px 4px 14px rgba(43, 27, 32, 0.45);
 }
 
 
@@ -64,13 +55,13 @@ h1 {
 
   position: relative;
 
-  width: 1000px;
+  width: 950px;
 
   max-width: 95%;
 
   margin: 0 auto;
 
-  margin-top: -15px;
+  margin-top: -18px;
 }
 
 
@@ -88,26 +79,28 @@ nav {
 
   position: absolute;
 
-  top: 50%;
+  top: 49%;
 
   left: 50%;
 
   transform: translate(-50%, -50%);
 
-  width: 80%;
+  width: 82%;
 
   display: flex;
 
   justify-content: center;
 
-  gap: 28px;
+  align-items: center;
+
+  gap: 26px;
 }
 
 
 
 nav a {
 
-  color: #6a4b52;
+  color: #6e4b53;
 
   text-decoration: none;
 
@@ -117,7 +110,7 @@ nav a {
 
   font-size: 13px;
 
-  font-weight: bold;
+  font-weight: 600;
 
   transition: 0.25s;
 }
@@ -126,24 +119,26 @@ nav a {
 
 nav a:hover {
 
-  color: #a06d78;
+  color: #b07888;
 }
 
 
 
-/* MAIN CONTENT */
+/* MAIN BOX */
 
 #homepage-box {
 
-  width: 62%;
+  width: 58%;
 
-  margin: 40px auto;
+  margin: 28px auto;
 
-  padding: 40px;
+  padding: 34px;
 
-  background-color: rgba(255, 244, 223, 0.18);
+  background-color: rgba(255, 244, 223, 0.16);
 
   color: #fff4df;
+
+  backdrop-filter: blur(1px);
 }
 
 
@@ -152,17 +147,17 @@ nav a:hover {
 
   font-family: 'Mea Culpa', cursive;
 
-  font-size: 70px;
+  font-size: 64px;
 
   font-weight: normal;
 
   margin-top: 0;
 
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 
   color: #fff4df;
 
-  text-shadow: 2px 4px 12px rgba(58, 38, 42, 0.35);
+  text-shadow: 2px 4px 12px rgba(43, 27, 32, 0.35);
 }
 
 
@@ -173,9 +168,7 @@ nav a:hover {
 
   line-height: 1.7;
 
-  color: #fff4df;
-
-  text-shadow: 1px 2px 8px rgba(0,0,0,0.35);
+  text-shadow: 1px 2px 8px rgba(0,0,0,0.4);
 }
 
 
@@ -188,15 +181,15 @@ footer {
 
   font-family: 'Mea Culpa', cursive;
 
-  font-size: 70px;
+  font-size: 64px;
 
   color: #fff4df;
 
-  margin-top: 50px;
+  margin-top: 34px;
 
-  margin-bottom: 18px;
+  margin-bottom: 10px;
 
-  text-shadow: 2px 4px 12px rgba(58, 38, 42, 0.35);
+  text-shadow: 2px 4px 12px rgba(43, 27, 32, 0.35);
 }
 
 
@@ -207,25 +200,21 @@ footer {
 
   header {
 
-    padding-top: 25px;
-
-    padding-left: 10px;
-
-    padding-right: 10px;
+    padding-top: 18px;
   }
 
   h1 {
 
     font-size: 68px;
 
-    line-height: 1.1;
+    line-height: 1;
   }
 
   #menu-wrapper {
 
     width: 95%;
 
-    margin-top: 0;
+    margin-top: -8px;
   }
 
   #menu-ribbon {
@@ -245,22 +234,22 @@ footer {
 
     text-align: center;
 
-    background-color: rgba(111, 143, 163, 0.9);
+    background-color: rgba(111, 143, 163, 0.92);
 
-    padding-top: 15px;
+    padding-top: 14px;
 
-    padding-bottom: 15px;
+    padding-bottom: 14px;
 
-    border-radius: 18px;
+    border-radius: 20px;
   }
 
   nav a {
 
     display: block;
 
-    margin-top: 12px;
+    margin-top: 10px;
 
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 
     font-size: 13px;
   }
@@ -269,12 +258,12 @@ footer {
 
     width: 78%;
 
-    padding: 28px;
+    padding: 24px;
   }
 
   #homepage-box h2 {
 
-    font-size: 52px;
+    font-size: 48px;
   }
 
   #homepage-box p {
@@ -284,6 +273,6 @@ footer {
 
   footer {
 
-    font-size: 52px;
+    font-size: 48px;
   }
 }
