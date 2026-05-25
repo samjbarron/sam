@@ -1,73 +1,73 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background-color: #f1b9ad;
+
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
   color: #fff4df;
+
   font-family: 'Cormorant Garamond', serif;
 }
 
 /* HEADER */
 
 header {
-  position: relative;
   text-align: center;
+
   padding: 80px 20px 45px;
-  background:
-    linear-gradient(
-      to bottom,
-      rgba(118, 151, 163, 0.95),
-      rgba(232, 170, 165, 0.95)
-    );
+
+  background-color: rgba(232, 170, 165, 0.55);
+
   border-left: 26px solid #6f8fa3;
   border-right: 26px solid #6f8fa3;
 }
 
 h1 {
   font-family: 'Great Vibes', cursive;
+
   font-size: 96px;
+
   font-weight: normal;
+
   margin: 0;
+
   color: #fff4df;
+
   text-shadow: 2px 4px 10px rgba(67, 52, 55, 0.35);
 }
 
-/* CORNER IMAGES */
+/* HIDE OLD CORNER PHOTOS */
 
 .corner-img {
-  position: absolute;
-  top: 35px;
-  width: 135px;
-  height: 175px;
-  object-fit: cover;
-  border: 5px solid #fff4df;
-  box-shadow: 0 8px 18px rgba(70, 45, 45, 0.25);
-}
-
-.left {
-  left: 45px;
-  transform: rotate(-5deg);
-}
-
-.right {
-  right: 45px;
-  transform: rotate(5deg);
+  display: none;
 }
 
 /* MENU */
 
 nav {
   text-align: center;
+
   padding: 18px 10px;
-  background-color: #7f9fb0;
+
+  background-color: rgba(111, 143, 163, 0.88);
+
   border-bottom: 4px solid #fff4df;
 }
 
 nav a {
   color: #fff4df;
+
   text-decoration: none;
+
   text-transform: uppercase;
+
   letter-spacing: 3px;
+
   font-size: 14px;
+
   margin: 0 18px;
 }
 
@@ -79,25 +79,36 @@ nav a:hover {
 
 #homepage-box {
   width: 62%;
+
   margin: 55px auto;
+
   padding: 38px;
-  background-color: rgba(255, 244, 223, 0.35);
+
+  background-color: rgba(255, 244, 223, 0.78);
+
   border-left: 10px solid #7f9fb0;
   border-right: 10px solid #7f9fb0;
+
   color: #493431;
 }
 
 #homepage-box h2 {
   margin-top: 0;
+
   font-size: 34px;
+
   font-weight: normal;
+
   text-transform: uppercase;
+
   letter-spacing: 4px;
+
   color: #493431;
 }
 
 #homepage-box p {
   font-size: 24px;
+
   line-height: 1.65;
 }
 
@@ -105,9 +116,13 @@ nav a:hover {
 
 footer {
   text-align: center;
+
   font-family: 'Great Vibes', cursive;
+
   font-size: 58px;
+
   color: #fff4df;
+
   margin: 45px 0 20px;
 }
 
@@ -117,6 +132,7 @@ footer {
 
   header {
     padding-top: 35px;
+
     border-left: 14px solid #6f8fa3;
     border-right: 14px solid #6f8fa3;
   }
@@ -125,23 +141,17 @@ footer {
     font-size: 62px;
   }
 
-  .corner-img {
-    position: static;
-    display: block;
-    margin: 15px auto;
-    width: 120px;
-    height: 155px;
-    transform: none;
-  }
-
   nav a {
     display: block;
+
     margin: 12px 0;
+
     font-size: 13px;
   }
 
   #homepage-box {
     width: 78%;
+
     padding: 26px;
   }
 
