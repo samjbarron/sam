@@ -25,9 +25,9 @@ header {
 
   text-align: center;
 
-  padding-top: 20px;
+  padding-top: 28px;
 
-  padding-bottom: 0px;
+  padding-bottom: 2px;
 }
 
 
@@ -55,11 +55,11 @@ h1 {
 
   position: relative;
 
-  width: 1000px;
+  width: 900px;
 
   max-width: 95%;
 
-  margin: -60px auto 0 auto;
+  margin: 10px auto 25px auto;
 }
 
 
@@ -77,21 +77,29 @@ h1 {
 
   position: absolute;
 
-  top: 31%;
+  top: 36%;
 
   left: 50%;
 
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
 
-  width: 60%;
+  width: 52%;
 
   display: flex;
 
   justify-content: center;
 
-  gap: 18px;
+  align-items: center;
 
-  z-index: 5;
+  gap: 14px;
+
+  margin: 0;
+
+  padding: 0;
+
+  background: transparent;
+
+  z-index: 10;
 }
 
 
@@ -106,7 +114,7 @@ h1 {
 
   letter-spacing: 1px;
 
-  font-size: 11px;
+  font-size: 10px;
 
   font-weight: 600;
 
@@ -130,7 +138,7 @@ h1 {
 
   width: 58%;
 
-  margin: -40px auto 0 auto;
+  margin: 20px auto;
 
   padding: 34px;
 
@@ -196,25 +204,30 @@ footer {
 
 @media screen and (max-width: 900px) {
 
+  header {
+
+    padding-top: 18px;
+  }
+
   h1 {
 
     font-size: 64px;
+
+    line-height: 1;
   }
 
   #menu-wrapper {
 
     width: 95%;
-
-    margin-top: -35px;
   }
 
   #menu-wrapper nav {
 
-    top: 28%;
+    top: 34%;
 
-    width: 72%;
+    width: 70%;
 
-    gap: 8px;
+    gap: 6px;
   }
 
   #menu-wrapper nav a {
@@ -227,8 +240,6 @@ footer {
   #homepage-box {
 
     width: 80%;
-
-    margin-top: -20px;
 
     padding: 24px;
   }
