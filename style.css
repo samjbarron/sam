@@ -25,9 +25,9 @@ header {
 
   text-align: center;
 
-  padding-top: 85px;
+  padding-top: 35px;
 
-  padding-bottom: 40px;
+  padding-bottom: 12px;
 }
 
 
@@ -62,13 +62,20 @@ h1 {
 
 nav {
 
-  text-align: center;
+  width: fit-content;
 
-  padding: 18px 10px;
+  margin: 0 auto;
+
+  margin-top: 10px;
+
+  padding: 16px 34px;
 
   background-color: rgba(111, 143, 163, 0.92);
-}
 
+  border-radius: 18px;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+}
 
 
 nav a {
