@@ -96,7 +96,7 @@ h1 {
   position: relative;
   z-index: 20;
   width: 52%;
-  margin: -145px auto 0 auto;
+  margin: -375px auto 0 auto;
   padding: 34px;
   background-color: rgba(255, 244, 223, 0.22);
   color: #fff4df;
@@ -139,22 +139,6 @@ h1 {
   transform: rotate(-0.5deg);
 }
 
-.fake-polaroid {
-  width: 280px;
-  height: 360px;
-  background-color: rgba(255,244,223,0.18);
-  border: 8px solid rgba(255,244,223,0.75);
-  box-shadow: 0 8px 18px rgba(0,0,0,0.3);
-  transform: rotate(-2deg);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.fake-polaroid span {
-  font-size: 48px;
-  color: rgba(255,244,223,0.85);
-}
 
 .about-text {
   flex: 1;
